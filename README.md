@@ -1,10 +1,10 @@
 Author: Claas Lendt (Tweeting @claaslendt)
 
-Last modified: 08.06.2023
+Last modified: 10.06.2023
 
 *Note: This is a living documentation and will be continuously extended and reviewed.*
 
-
+</br>
 
 ## A wearable system to estimate energy expenditure
 
@@ -14,7 +14,7 @@ One particular method I want to compare my algorithm against is the wearable sys
 
 It seems like the wearable system from Patrick Slade et al. is a good candidate to compare my future estimations against! So I decided to recreate the system based on the information given in the paper and its supplementary documents. It's been quite a journey, given that I had almost zero knowledge on the Raspberry Pi, I2C addresses or 3D printing at the start of this project.
 
-
+</br>
 
 ## Building the system (almost) from scratch
 
@@ -24,10 +24,13 @@ As for the IMUs, I chose the [Adafruit ISM330DHCX](https://www.adafruit.com/prod
 
 The final component is an 10.000mAh USB rechargeable battery to power the system during mobile use. The battery is simply connected to the Raspberry Pi using a short USB cable (USB-A to micro-USB). I went with the Ansmann PB320PD.
 
+</br>
+
 **Figure 1.** The Raspberry Pi Zero 2 W, the two Adafruit IMUs and the STEMMA QT/Qwiic connections using the SparkFun SHIM adapter on the Raspberry Pi.
 
 ![raw_system](https://github.com/claaslendt/impl-slade/assets/49204955/20e179f1-8ac4-422e-9e06-f5bc6e4a780f)
 
+</br>
 
 ### 3D printing the cases
 
@@ -35,31 +38,37 @@ The two IMUs and the Raspberry Pi need to be attached to the body and be protect
 
 Each case consists of a base unit and a top. The connection cables can be attached through the small holes. The Raspberry Pi and the IMU boards are attached to the case using small plastic screws (M2.5) and hex nuts. I am also sharing the files used for printing within the 3d_printing folder.
 
+</br>
+
 **Figure 2.** The two cases for the IMUs with the screws and hex nuts fixating the IMUs to the case. The additional wings on the cases are used to attach the cases with additional elastic straps (see below).
 
 ![IMU_case](https://github.com/claaslendt/impl-slade/assets/49204955/76600a31-f1be-4da8-922f-9d3da3dbbac7)
 
-
+</br>
 
 ### Attaching the IMUs to the leg
 
 I did quite some experimenting with different elastic straps to attach the sensors to the thigh and shank as I wanted them to be lightweight, comfortable and not slipping too much. At the end, I found some elastic straps which are used to attach urine drainage bags (see [MedlinePlus: Medical Encyclopaedia](https://medlineplus.gov/ency/patientinstructions/000142.htm)) and they work great! The strap has a layer of silicone rubber which prevents any slippage during movements of the leg and can easily be attached using the velcro. The PZN (German Medical Product ID) for these particular straps is 08913533.
 
+</br>
+
 **Figure 3.** The medical straps used to attach the sensor units to the shank and thigh.
 
 ![elastic_strap](https://github.com/claaslendt/impl-slade/assets/49204955/1c2e8edf-f84d-4721-9943-fa2042734618)
 
-
+</br>
 
 ## The final system - completed!
 
 When everything is put together, the Raspberry Pi and the battery are attached to the waist using an elastic belt with a quick-release. The two IMUs are attached to the shank and thigh. The system has been quite comfortable during my piloting (walking and running on a treadmill as well as cycling on an ergometer).
 
+</br>
+
 **Figure 4.** The left (A) shows the complete system with the battery (lower left) connected to the Raspberry Pi (lower right) via USB. The Raspberry Pi is connected to the IMU at the thigh via Qwiic cable. Finally, the two IMUs are connected using another Qwiic cable. The system is attached to the left leg (B).
 
 ![system_complete](https://github.com/claaslendt/impl-slade/assets/49204955/634e9fc1-4ccc-43fb-ad92-6bc4dfad6169)
 
-
+</br>
 
 ## Software and the modelling approach
 
@@ -67,7 +76,7 @@ Patrick Slade is openly sharing the Python code to run his model on GitHub / Zen
 
 There is a great tutorial using [Google Colab: Tutorial - Estimating Energy Expenditure](https://colab.research.google.com/github/stanfordnmbl/mobilize-tutorials/blob/main/Tutorial_Estimating_Energy_Expenditure_During_Exercise.ipynb#scrollTo=iRwsQrItNHaX) and a webinar by Patrick Slade ([Stanford mobilize - Webinar: Estimating Energy Expenditure During Exercise Using Wearable Sensors](https://mobilize.stanford.edu/webinar-estimating-energy-expenditure-during-exercise-using-wearable-sensors/)). I can highly recommend both resources to further understand the system and modelling approach. **Thanks to Patrick for putting all these great resources out there and making the model open-source!** :rocket:
 
-
+</br>
 
 ### Acknowledgements
 
