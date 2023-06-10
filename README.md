@@ -1,4 +1,4 @@
-Author: Claas Lendt (Tweeting @claaslendt)
+Author: Claas Lendt (I'm tweeting @claaslendt)
 
 Last modified: 10.06.2023
 
