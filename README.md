@@ -28,7 +28,7 @@ The final component is an 10.000mAh USB rechargeable battery to power the system
 
 **Figure 1.** The Raspberry Pi Zero 2 W, the two Adafruit IMUs and the STEMMA QT/Qwiic connections using the SparkFun SHIM adapter on the Raspberry Pi.
 
-![raw_system](https://github.com/claaslendt/impl-slade/assets/49204955/20e179f1-8ac4-422e-9e06-f5bc6e4a780f)
+![raw_system](https://raw.githubusercontent.com/claaslendt/impl-slade/v0.1/pictures/raw_system.jpg)
 
 </br>
 
@@ -42,7 +42,7 @@ Each case consists of a base unit and a top. The connection cables can be attach
 
 **Figure 2.** The two cases for the IMUs with the screws and hex nuts fixating the IMUs to the case. The additional wings on the cases are used to attach the cases with additional elastic straps (see below).
 
-![IMU_case](https://github.com/claaslendt/impl-slade/assets/49204955/76600a31-f1be-4da8-922f-9d3da3dbbac7)
+![IMU_case](https://raw.githubusercontent.com/claaslendt/impl-slade/v0.1/pictures/IMU_case.jpg)
 
 </br>
 
@@ -54,7 +54,7 @@ I did quite some experimenting with different elastic straps to attach the senso
 
 **Figure 3.** The medical straps used to attach the sensor units to the shank and thigh.
 
-![elastic_strap](https://github.com/claaslendt/impl-slade/assets/49204955/1c2e8edf-f84d-4721-9943-fa2042734618)
+![elastic_strap](https://raw.githubusercontent.com/claaslendt/impl-slade/v0.1/pictures/elastic_strap.jpg)
 
 </br>
 
@@ -66,7 +66,7 @@ When everything is put together, the Raspberry Pi and the battery are attached t
 
 **Figure 4.** The left (A) shows the complete system with the battery (lower left) connected to the Raspberry Pi (lower right) via USB. The Raspberry Pi is connected to the IMU at the thigh via Qwiic cable. Finally, the two IMUs are connected using another Qwiic cable. The system is attached to the left leg (B).
 
-![system_complete](https://github.com/claaslendt/impl-slade/assets/49204955/634e9fc1-4ccc-43fb-ad92-6bc4dfad6169)
+![system_complete](https://raw.githubusercontent.com/claaslendt/impl-slade/v0.1/pictures/system_complete.jpg)
 
 </br>
 
